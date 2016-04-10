@@ -34,10 +34,10 @@ var ForecastContainer = React.createClass({
     handleDayClick: function (dayWeather) {
       console.log(dayWeather);
         this.context.router.push({
-            pathname: '/detail/' + this.state.city//,
-            //state: {
-            //    weather: weather
-            //}
+            pathname: '/detail/' + this.state.city,
+            state: {
+                weather: dayWeather
+            }
         })
     },
 
