@@ -24,7 +24,7 @@ function NavBar () {
 var Main = React.createClass({
     render: function () {
         return (
-            <div>
+            <div style={styles.full_height}>
                 <NavBar />
                 {this.props.children}
             </div>
