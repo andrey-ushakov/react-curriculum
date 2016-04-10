@@ -3,8 +3,8 @@ var styles = {
         marginRight: '10px'
     },
     nav_style: {
-        background: 'rgba(252, 90, 44, 0.890196)',
-        height: '60px'
+        background: 'rgba(252, 90, 44, 0.890196)'//,
+        //height: '60px'
     },
     nav_brand: {
         fontSize: '30px',
