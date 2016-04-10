@@ -41,6 +41,7 @@ var ForecastContainer = React.createClass({
             <Forecast
                 isLoading = {this.state.isLoading}
                 header = {this.state.city}
+                forecast = {this.state.dailyForecast}
             />
         )
     }
