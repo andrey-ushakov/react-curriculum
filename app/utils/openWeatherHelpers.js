@@ -32,7 +32,10 @@ var helpers = {
                         dateFormatted: moment.unix(day.dt).format("dddd, MMM D"),
                         icon: day.weather[0].icon,
                         main: day.weather[0].main,
-                        description: day.weather[0].description
+                        description: day.weather[0].description,
+                        min_temp: day.temp.min,
+                        max_temp: day.temp.max,
+                        humidity: day.humidity
                     }
                 });
                 return ret;
