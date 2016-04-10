@@ -1,7 +1,8 @@
 var React = require('react');
-var Home = require('../components/Home');
+var NavBar = require('../components/NavBar');
+var styles = require('../styles');
 
-var HomeContainer = React.createClass({
+var MainContainer = React.createClass({
     contextTypes: {
         router: React.PropTypes.object.isRequired
     },
@@ -24,14 +25,16 @@ var HomeContainer = React.createClass({
 
     render: function () {
         return (
-            <Home
-                onSubmitCity={this.handleSubmitCity}
-                onChangeCity={this.handleChangeCity}
-                city={this.state.city}
-            />
+            <div style={styles.full_height}>
+                <NavBar onSubmitCity={this.handleSubmitCity}
+                        onChangeCity={this.handleChangeCity}
+                        city={this.state.city}
+                />
+                {this.props.children}
+            </div>
         )
     }
 
 });
 
-module.exports = HomeContainer;
+module.exports = MainContainer;
