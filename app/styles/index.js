@@ -47,6 +47,34 @@ var styles = {
     },
     home_btn: {
         margin:'10px'
+    },
+
+
+    forecast_container: {
+        textAlign: 'center'
+    },
+    forecast_header: {
+        fontSize: '65px',
+        color: '#333',
+        fontWeight: '100',
+        textAlign: 'center',
+        marginTop: '50px',
+        marginBottom: '30px'
+    },
+    forecast_p: {
+        fontSize: '30px',
+        color: '#333',
+        fontWeight: '100'
+    },
+
+    forecast_week_container: {
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        maxWidth: '1200px',
+        margin: '50px auto'
     }
 };
 
