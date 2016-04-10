@@ -1,13 +1,14 @@
 var React = require('react');
+//var PropTypes = React.PropTypes;
+var styles = require('../styles');
 
-var Forecast = React.createClass({
-    render: function () {
-        return (
-            <div>
-                Forecast
-            </div>
-        )
-    }
-});
+function Forecast(props) {
+    return (
+        <div>
+            Forecast
+        </div>
+    );
+}
+
 
 module.exports = Forecast;
