@@ -1,13 +1,15 @@
 var React = require('react');
 var PropTypes = React.PropTypes;
 var styles = require('../styles');
+var DayIcon = require('./DayIcon');
 
 function ForecastDay(props) {
     return (
-        <div style={styles.forecast_day_container} onClick={props.handleDayClick}>
-            <img style={styles.forecast_day_img} alt="Weather" src={"app/images/icons/" + props.dayForecast.icon + ".svg"} />
-            <h2 style={styles.forecast_day_h2}>{props.dayForecast.dateFormatted}</h2>
-        </div>
+        <DayIcon
+            text = {props.dayForecast.dateFormatted}
+            icon = {props.dayForecast.icon}
+            clickHandler = {props.handleDayClick}
+        />
     );
 }
 

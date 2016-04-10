@@ -1,14 +1,15 @@
 var React = require('react');
 var PropTypes = React.PropTypes;
 var styles = require('../styles');
+var DayIcon = require('./DayIcon');
 
 function Detail(props) {
     return (
         <div>
-            <div style={styles.forecast_day_container} >
-                <img style={styles.forecast_day_img} alt="Weather" src={"app/images/icons/" + props.weather.icon + ".svg"} />
-                <h2 style={styles.forecast_day_h2} >{props.weather.dateFormatted}</h2>
-            </div>
+            <DayIcon
+                text = {props.weather.dateFormatted}
+                icon = {props.weather.icon}
+            />
 
             <div style={styles.detail_container_bottom}>
                 <p>{props.city}</p>

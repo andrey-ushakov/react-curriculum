@@ -77,17 +77,17 @@ var styles = {
         margin: '50px auto'
     },
 
-    forecast_day_container: {
+    day_container: {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
         flexDirection: 'column',
         margin: '35px'
     },
-    forecast_day_img: {
+    day_img: {
         height: '130px'
     },
-    forecast_day_h2: {
+    day_h2: {
         fontSize:'30px',
         color:'#333',
         fontWeight:100
